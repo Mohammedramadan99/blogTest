@@ -16,7 +16,7 @@ function Register() {
       e.preventDefault()
       const userData = { name, email, password, images }
       dispatch(registerUserAction(userData))
-    console.log(userData)
+      console.log(userData)
     }
     const createProductImagesChange = (e) =>
     {
