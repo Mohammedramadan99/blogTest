@@ -1,4 +1,4 @@
-import { registerUserAction } from '@/redux/usersSlice';
+import { registerUserAction } from '../../redux/usersSlice';
 import Image from 'next/image';
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';

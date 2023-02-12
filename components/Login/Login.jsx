@@ -1,4 +1,4 @@
-import { loginUserAction } from '@/redux/usersSlice'
+import { loginUserAction } from '../../redux/usersSlice'
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
