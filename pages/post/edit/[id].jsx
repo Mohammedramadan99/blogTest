@@ -1,4 +1,4 @@
-import EditPost from "@/components/Posts/EditPost"
+import EditPost from "../../../components/Posts/EditPost"
 
 function editPost() {
   return (

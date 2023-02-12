@@ -1,4 +1,4 @@
-import NewBlog from '@/components/Posts/NewBlog'
+import NewBlog from '../../../components/Posts/NewBlog'
 import React from 'react'
 
 function index() {

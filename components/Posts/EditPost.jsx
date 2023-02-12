@@ -1,8 +1,8 @@
-import { allCategories } from '@/redux/categorySlice'
-import { updatePostAction,getPostDetails, reset } from '@/redux/postSlice'
-import dynamic from 'next/dynamic'
+import { allCategories } from '../../redux/categorySlice'
+import { updatePostAction,getPostDetails, reset } from '../../redux/postSlice'
+
 import { useRouter } from 'next/router'
-import React, { useEffect, useMemo, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 // import ReactQuill from 'react-quill'
 import 'react-quill/dist/quill.snow.css'
 import { useDispatch, useSelector } from 'react-redux'

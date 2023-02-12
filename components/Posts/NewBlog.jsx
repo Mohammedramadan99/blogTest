@@ -1,5 +1,5 @@
-import { allCategories } from '@/redux/categorySlice'
-import { createPost, reset } from '@/redux/postSlice'
+import { allCategories } from '../../redux/categorySlice'
+import { createPost, reset } from '../../redux/postSlice'
 import dynamic from 'next/dynamic'
 import { useRouter } from 'next/navigation'
 import React, { useEffect, useMemo, useState } from 'react'
