@@ -1,0 +1,50 @@
+.newBlog,.editPost{
+    width: 100%;
+    height: 100%;
+    margin: rem(20) auto;
+    @include flex();
+    .container{
+        width: 100%;
+        .title{
+            text-align: center;
+            text-transform: capitalize;
+            padding: rem(20);
+            font-weight: 600;
+            font-size: rem(30);
+        }
+        form{
+            width: 100%;
+            @include flex($dir:column);
+            input{
+                width: 100%;
+                padding: rem(10);
+                border: 1px solid #ddd;
+            }
+            .categories{
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                p{
+                    margin-left: rem(30);
+                    margin-right: rem(30);
+                    text-transform: capitalize;
+                }
+                select{
+                    width: 100%;
+                    border: 1px solid #ddd;
+                    outline: none;
+                }
+            }
+            >button{
+                border-radius: rem(20);
+                padding: 10px 20px;
+                border: 2px solid transparent;
+                text-transform: capitalize;
+                // background-color: transparent;
+                background-color: #555;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+    }
+}

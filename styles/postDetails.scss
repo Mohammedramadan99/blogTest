@@ -1,0 +1,156 @@
+.postDetails{
+    padding-bottom: rem(50);
+    .image{
+        margin-bottom: rem(50);
+        img{
+            object-fit: cover;
+        }
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        gap: rem(50);
+        @include tablet{
+            grid-template-columns: 1fr;
+        }
+        .post_part{
+            .title{
+                text-transform: capitalize;
+                margin-top: rem(20);
+                margin-bottom: rem(10);
+                font-size: rem(40);
+                font-weight: 600;
+                // text-align: center;
+                font-family: 'Playfair Display', serif;
+            }
+            .row_info{
+                @include flex($justify:flex-start);
+                margin-bottom: rem(10);
+                .createdAt{
+                    text-transform: capitalize;
+                    // text-align: center;
+                    font-size: rem(15);
+                    color: #999;
+                }
+                .category{
+                    position: relative;
+                    color: $green_dark_color;
+                    font-weight: 600;
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        width: 0;
+                        height: rem(2);
+                        background-color: $green_dark_color;
+                        left: 0;
+                        bottom: 0;
+                        transition: $normal_speed;   
+                    }
+                    &:hover{
+                        &::after{
+                            width: 100%;
+                        }
+                    }
+                }
+                .edit{
+                    // margin: rem(20) auto;
+                    padding: rem(10) rem(20);
+                    @include flex();
+                    text-transform: capitalize;
+                    cursor: pointer;
+                    font-weight: 600;
+                    // background-color: $red_color;
+                    color: $red_color;
+                    width: fit-content;
+                    border-radius: rem(10);
+                    svg{
+                        // margin-right: rem(20);
+                    }
+                }
+                .author{
+                    // text-align: center;
+                    font-weight: 700;
+                    font-size: rem(12);
+                }
+            }
+            .content{
+                h1,h2,h3,h4,h5,h6{
+                    border-left: 3px solid $main_color;
+                    padding-left: 10px;
+                    font-weight: 600;
+                }
+                p{
+                    font-size: rem(17);
+                    line-height: 2;
+                }
+                ul{
+                    list-style: none;
+                    li{
+                        position: relative;
+                        margin-bottom: 10px;
+                        margin-left: 20px;
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            width: rem(5);
+                            height: rem(5);
+                            border: rem(2) solid $main_color;
+                            top: rem(7);
+                            left: rem(-20);
+                            border-radius: 50%;
+                            transition: $normal_speed;
+                        }
+                        &:hover{
+                            &::before{
+                                background-color: $main_color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .author_part{
+            position: sticky;
+            top: 10%;
+            right: 0;
+            height: 50vh;
+            text-align: center;
+            z-index: 1000;
+            .image{
+                position: relative;
+                width: rem(150);
+                height: rem(150);
+                margin: auto;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    top: rem(-8);
+                    left: rem(-8);
+                    width: 107%;
+                    height: 107%;
+                    border: 3px solid $main_color;
+                    border-radius: 50%;
+                }
+            }
+            .name{
+                margin-top: rem(20);
+                font-size: rem(22);
+                font-weight: 500;
+                text-transform: capitalize;
+            }
+            .bio{
+                padding: rem(20) 0;
+                font-size: rem(13);
+                text-transform: capitalize;
+                font-weight: 500;
+                color: #555
+            }
+            .socialMedia{
+                @include flex();
+                .item{
+                    
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+
+
+// mixins
+
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+
+@function rem($value) {
+  $remvalue: $value;
+  $remValue: ($value / 16)+rem;
+  @return $remValue;
+}
+
+@mixin flex($justify: center, $align: center, $gap: 10, $dir: row) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  gap: rem($gap);
+  flex-direction: $dir;
+}
+
+@mixin grid($min, $gap: 10) {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(rem($min), 1fr));
+  gap: rem($gap);
+}
+
+// global Classes
+.head_dark-hover{
+  transition: $normal_speed;
+  &:hover{
+    color: #555;
+  }
+}

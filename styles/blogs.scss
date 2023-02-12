@@ -1,0 +1,60 @@
+.blogs{
+    height: 100%;
+    padding-bottom: rem(70);
+    .header{
+        @include flex();
+        height: 100%;
+        height: rem(500);
+        background-color: $light_color;
+        .circle{
+            width: rem(400);
+            height: rem(400);
+            padding: 20px;
+            background-color: rgba($main_color, .2);
+            border-radius: 50%;
+            @include flex();
+            .text{
+                font-size: rem(60);
+                color: $main_color;
+                font-weight: bold;
+                background-color: rgba($light_color, .5);
+                width: 150%;
+                height: 100%;
+                border-radius: 50%;
+                @include flex();
+                span{
+                    display: inline-block;
+                    font-size: rem(150);
+                    animation: color 10s linear infinite;
+                }
+            }
+        }
+    }
+    .container{
+        .head{
+            padding: rem(20) 0;
+            text-transform: capitalize;
+            font-size: rem(20);
+            span{
+                font-weight: 600;
+
+            }
+        }
+    }
+}
+
+@keyframes color {
+    0%{
+        color: darken($light_color, 5%);
+        transform: scale(.7);
+    }
+    50%{
+        color: $main_color;
+        transform: scale(1.1);
+    }
+    100%{
+        color: darken($light_color, 5%);
+        transform: scale(.7);
+
+    }
+}

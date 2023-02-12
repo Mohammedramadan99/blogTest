@@ -1,0 +1,28 @@
+.login,.register{
+    // background-color: $red_color;
+    // height: 100vh;
+    position: relative;
+    width: rem(500);
+    height: 70vh;
+    margin: auto;
+    @include flex();
+    form{
+        width: 100%;
+        @include flex($dir:column);
+        h1{
+            text-transform: capitalize;
+        }
+        input{
+            width: 100%;
+            padding: rem(10);
+            border: 1px solid #eee;
+            color: #999;
+        }
+        .submit-btn{
+            background-color: transparent;
+            text-transform: capitalize;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+    }
+}

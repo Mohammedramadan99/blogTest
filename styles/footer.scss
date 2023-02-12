@@ -1,0 +1,81 @@
+.footer{
+    padding: rem(70) 10px !important;
+    width: 100%;
+    background-color: $light_color;
+    .container{
+        @include grid($min:250);
+        // color: $light_color;
+        gap: rem(20);
+        .col{
+            >.title{
+                margin-bottom: rem(20);
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+            p{
+                color: #444;
+                opacity: .5;
+            }
+            &:nth-child(1){
+                .logo{
+                    margin: rem(20) 0;
+                }
+            }
+            &:nth-child(2){
+                .posts{
+                    .post{
+                        @include flex($justify:flex-start);
+                        margin-bottom: rem(20);
+                        .img{
+                            margin-right: rem(10);
+                        }
+                        .text{
+                            .title{
+                                font-weight: 600;
+                                text-transform: capitalize;
+                            }
+                            .date{
+                                color: #999;
+                            }
+                        }
+                    }
+                }
+            }
+            &:nth-child(3){
+                .categories{
+                    @include flex($justify:flex-start);
+                    flex-wrap: wrap;
+                }
+            }
+            &:nth-child(4){
+                form{
+                    margin-top: rem(20);
+                    input{
+                        height: rem(30);
+                        color: $main_color;
+                        &:first-child{
+                            width: 60%;
+                            padding-left: rem(10);
+                            padding-right: rem(10);
+                            border: none;
+                            color: $red_color;
+                            padding-right: rem(30);
+                            &::placeholder{
+                                color: $red_color;
+                                opacity: .5;
+                            }
+                        }
+                        &:last-child{
+                            padding: 0 10px;
+                            width: 40%;
+                            border: rem(1) solid $red_color;
+                            background-color: $red_color;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
