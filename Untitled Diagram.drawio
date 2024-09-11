@@ -7,15 +7,6 @@
         <mxCell id="W4jR9vC6k2D3Lc0EfBEV-16" value="&lt;font style=&quot;font-size: 34px;&quot;&gt;BLOG&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="125" y="30" width="600" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="W4jR9vC6k2D3Lc0EfBEV-17" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;exitX=0.846;exitY=1.044;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="W4jR9vC6k2D3Lc0EfBEV-16">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="589.9999999999998" y="100" as="sourcePoint" />
-            <mxPoint x="530" y="230" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="633" y="230" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
